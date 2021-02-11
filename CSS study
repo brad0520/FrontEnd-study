@@ -1,0 +1,9 @@
+[드림코딩 학습 정리]
+
+	• Flexbox : 박스들의 위치를 배치하는데 있어 float 등을 활용하는 오래된 방식이 아닌 편리한 방식 사용 가능
+	• Position 속성 : static(기본 설정), relative(상위 개체 대비 상대적인 위치), absolute(상위 개체 기준으로 위치 선정), fixed(윈도우 기준으로 위치 선정), sticky(스크롤해도 위치가 고정) 의 차이를 이해하고 활용해야 박스 모델의 배치를 자유롭게 할 수 있음
+	• Color tool 사이트 : https://material.io/resources/color/#!/?view.left=0&view.right=0 컬러별 적용 테마를 미리 예상해볼 수 있음
+	• Material Design : https://material.io/ 아이콘 등의 디자인 요소 참고 및 무료 사용 가능한 사이트
+	• 100vh : 뷰포트 높이로 보이는 화면 기준으로 100%
+	• 100% : 부모 객체를 기준으로 100%
+아이콘 무료 활용 사이트 :  https://fontawesome.com/

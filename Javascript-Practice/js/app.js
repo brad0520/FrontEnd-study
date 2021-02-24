@@ -22,12 +22,9 @@ $(document).ready(function(){
         $(".box3, .box4").css({'background-color':'red'});
       } else {
         $(".box3, .box4").css({'background-color':'tomato'});
+        $(".box-container").toggleClass("active");
       };
       
-    });
-    
-    $(".box5").click(function(){
-      $(".box-container").toggleClass("active");
     });
     
   });

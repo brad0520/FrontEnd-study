@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Converse</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.js"
+      integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/app.js"></script>
+  </head>
+  <body>
+    <!-- NAV 시작 -->
+    <div class="nav-wrap">
+      <div class="nav-box con row">
+        <div class="logo-box cell">
+          <svg id="store-logo" viewBox="0 0 805.4 94">
+            <path
+              d="M724.9 40.6V20.2l-11.6 16.5-19.3-6.3L706.1 47l-11.9 16.5 19.1-6.3 11.6 16.6V53.3l19.5-6.3-19.5-6.4z"
+            ></path>
+            <path
+              d="M762.6 0h-36.7l42.8 47-42.8 47h36.7l42.8-47-42.8-47zm-721 27.5c5.8 0 11.5 2.8 15.3 7.5l1.4 1.7 17.9-12.3-1.6-2c-7.9-9.9-20-15.6-33-15.6C18.7 6.8 0 24.7 0 46.6s18.7 39.8 41.6 39.8c12.9 0 24.9-5.6 32.8-15.3l1.6-2-17.9-12.3-1.4 1.7c-3.9 4.7-9.4 7.4-15.2 7.4-10.6 0-19.6-8.8-19.6-19.2.1-10.4 9.1-19.2 19.7-19.2zm192.3 23.9L201.5 9h-20.6v75h20V42l30.2 42h22.8V9h-20v42.4zm77 11c0 .6-.8.7-1.2.7-.3 0-.9-.1-1.2-.8L291.9 9h-23l24.5 75h32.7l24.5-75h-23l-16.7 53.4zm186.2-9c8-4.6 12.6-13 11.9-22.2-.9-12.5-11.8-22.1-24.8-22.1h-38.3v75h20v-27h9c.9 0 1.7.1 2.3.9l12.9 26.1h22.5l-15.5-30.7zM483.6 37H466v-8h17.6c2.4 0 4.4 1.6 4.4 4s-2 4-4.4 4zm124.3 47h60V64h-40v-9h36V37h-36v-8h40V9h-60v75zm-45.2-46.7c-10.7-2.4-13.8-4-13.8-7.5v-.2c0-2.8 2.1-5 7.3-5 6.9 0 12.5 2.2 20 6.7l12-14.2c-8.4-6.7-18.5-10.3-31.6-10.3-18.6 0-29.7 10.4-29.7 24.8v.2c0 15.9 13.1 20.6 29.6 24.3 10.5 2.4 13.4 4.2 13.4 7.4v.2c0 3.3-3.7 5.3-9.5 5.3-9 0-17.8-3.2-25.4-9.3L522.9 74c9.5 8.5 23.3 12.8 37 12.8 18.8 0 32-9.4 32-25.2v-.2c0-14.5-11.4-20.2-29.2-24.1zM124.8 6.9c-22.4 0-40.6 17.9-40.6 39.8 0 22 18.2 39.8 40.6 39.8 22.4 0 40.6-17.9 40.6-39.8 0-22-18.2-39.8-40.6-39.8zm0 58.8c-10.5 0-19-8.5-19-19s8.5-19 19-19 19 8.5 19 19-8.5 19-19 19zM364.9 84h60V64h-40v-9h36V37h-36v-8h40V9h-60v75z"
+            ></path>
+          </svg>
+        </div>
+
+        <div class="menu-box cell">
+          <ul class="cell row">
+            <li class="cell"><a href="#">신발</a></li>
+            <li class="cell"><a href="#">의류</a></li>
+            <li class="cell"><a href="#">아동</a></li>
+            <li class="cell"><a href="#">런칭캘린더</a></li>
+            <li class="cell"><a href="#">회원전용</a></li>
+          </ul>
+        </div>
+
+        <div class="serch-box cell-r">
+          <a href="#">
+            <i class="fas fa-search"></i>
+          </a>
+        </div>
+
+        <div class="icon-box cell-r">
+          <ul class="row">
+            <li class="cell">
+              <a href="#">
+                <i class="far fa-question-circle"></i>
+              </a>
+            </li>
+            <li class="cell">
+              <a href="#">
+                <i class="far fa-heart"></i>
+              </a>
+            </li>
+            <li class="cell">
+              <a href="#">
+                <i class="fas fa-shopping-cart"></i>
+              </a>
+            </li>
+            <li class="cell">
+              <a href="#">
+                <i class="far fa-user"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- NAV 끝 -->
+    <!-- 2차 메뉴 시작 -->
+    <div class="nav-2-depth-wrap">
+      <div class="nav-2-depth con row">
+        <div class="nav-2-depth-left cell">
+          <div class="nav-2-content shoes">
+            <div class="list-box">
+              <ul>
+                <li><a href="#"></a>전체보기</li>
+                <li><a href="#"></a>척테일러 올스타</li>
+                <li><a href="#"></a>척70</li>
+                <li><a href="#"></a>원스타</li>
+                <li><a href="#"></a>잭퍼셀</li>
+                <li><a href="#"></a>프로레더</li>
+                <li><a href="#"></a>회원전용</li>
+              </ul>
+            </div>
+            <div class="recom-box">
+              <p>추천상품</p>
+              <ul class="row">
+                <li class="cell">
+                  <a href=""></a>
+                  <img
+                    src="https://image.converse.co.kr/cmsstatic/menu/12723/Flyout_256x300_01-7.jpg"
+                    alt=""
+                  />
+                  <p>빅 사이즈</p>
+                </li>
+                <li class="cell">
+                  <a href=""></a>
+                  <img
+                    src="https://image.converse.co.kr/cmsstatic/menu/12733/Flyout_256x300_03-9.jpg"
+                    alt=""
+                  />
+                  <p>농구화 컬렉션</p>
+                </li>
+                <li class="cell">
+                  <a href=""></a>
+                  <img
+                    src="https://image.converse.co.kr/cmsstatic/menu/12751/Flyout_256x300_02-7.jpg"
+                    alt=""
+                  />
+                  <p>정글 신</p>
+                </li>
+                <li class="cell">
+                  <a href=""></a>
+                  <img
+                    src="https://image.converse.co.kr/cmsstatic/menu/12752/Flyout_256x300_04-7.jpg"
+                    alt=""
+                  />
+                  <p>온라인 온리</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="nav-2-content clothes">
+            <div class="list-box">
+              <ul>
+                <li><a href="#"></a>전체보기</li>
+                <li><a href="#"></a>아우터</li>
+                <li><a href="#"></a>상의</li>
+                <li><a href="#"></a>하의</li>
+                <li><a href="#"></a>용품</li>
+              </ul>
+            </div>
+            <div class="recom-box">
+              <p>추천상품</p>
+              <ul class="row">
+                <li class="cell">
+                  <a href=""></a>
+                  <img
+                    src="https://image.converse.co.kr/cmsstatic/menu/12729/Flyout_256x300_05-1.jpg"
+                    alt=""
+                  />
+                  <p>풀오버 크루</p>
+                </li>
+                <li class="cell">
+                  <a href=""></a>
+                  <img
+                    src="https://image.converse.co.kr/cmsstatic/menu/12728/Flyout_256x300_06-1.jpg"
+                    alt=""
+                  />
+                  <p>코트 레디 후디</p>
+                </li>
+                <li class="cell">
+                  <a href=""></a>
+                  <img
+                    src="https://image.converse.co.kr/cmsstatic/menu/12731/Flyout_256x300_08-2.jpg"
+                    alt=""
+                  />
+                  <p>패널 조거</p>
+                </li>
+                <li class="cell">
+                  <a href=""></a>
+                  <img
+                    src="https://image.converse.co.kr/cmsstatic/menu/12730/Flyout_256x300_07-2.jpg"
+                    alt=""
+                  />
+                  <p>고 2 백팩</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="nav-2-content kids">
+            <div class="list-box">
+              <ul>
+                <li><a href="#"></a>전체보기</li>
+                <li><a href="#"></a>유아 (165mm이하)</li>
+                <li><a href="#"></a>어린이 (215mm이하)</li>
+              </ul>
+            </div>
+            <div class="recom-box">
+              <p>추천상품</p>
+              <ul class="row">
+                <li class="cell">
+                  <a href=""></a>
+                  <img
+                    src="https://image.converse.co.kr/cmsstatic/menu/12755/Flyout_256x300_09-1.jpg"
+                    alt=""
+                  />
+                  <p>척테일러 올스타 키즈</p>
+                </li>
+                <li class="cell">
+                  <a href=""></a>
+                  <img
+                    src="https://image.converse.co.kr/cmsstatic/menu/12753/Flyout_256x300_10.jpg"
+                    alt=""
+                  />
+                  <p>잭퍼셀 클래식 인펀트</p>
+                </li>
+                <li class="cell">
+                  <a href=""></a>
+                  <img
+                    src="https://image.converse.co.kr/cmsstatic/menu/12754/Flyout_256x300_10.jpg"
+                    alt=""
+                  />
+                  <p>러브 스레드</p>
+                </li>
+                <li class="cell">
+                  <a href=""></a>
+                  <img
+                    src="https://image.converse.co.kr/cmsstatic/menu/12756/Flyout_256x300_08.jpg"
+                    alt=""
+                  />
+                  <p>걸즈 게이머</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="nav-2-depth-right cell"></div>
+      </div>
+    </div>
+    <!-- 2차 메뉴 끝 -->
+
+    <!-- 섹션0 시작 -->
+    <div class="section-wrap section00-wrap con">
+      <div class="section00">
+        <div
+          class="img-box"
+          style="
+            background-image: url(https://image.converse.co.kr/cmsstatic/structured-content/18739/KakaoTalk_20210302_105317211.jpg?gallery);
+          "
+        ></div>
+      </div>
+    </div>
+
+    <!-- 섹션2 시작 -->
+    <div class="section-wrap section02-wrap con">
+      <p class="title">CHOOSE YOUR ICON</p>
+
+      <ul class="link">
+        <li>
+          <a href="#">
+            <div class="svg">
+              <svg id="icon-arrow" viewBox="0 0 46.7 36">
+                <path
+                  d="M27.9 0l-3.6 3.5 12.5 12.1H0v4.9h36.8l-12.5 12 3.6 3.5 18.6-18z"
+                ></path>
+              </svg>
+            </div>
+            <span>신발 전체 보기</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="titles row">
+        <div class="tile cell">
+          <a href="#">
+            <img
+              src="https://image.converse.co.kr/cmsstatic/structured-content/15195/%EC%B2%99%ED%85%8C%EC%9D%BC%EB%9F%AC%EC%98%AC%EC%8A%A4%ED%83%802.jpg?gallery"
+              alt=""
+            />
+          </a>
+          <a href="#">척레일러 올스타</a>
+        </div>
+        <div class="tile cell">
+          <a href="#">
+            <img
+              src="https://image.converse.co.kr/cmsstatic/structured-content/15196/%EC%B2%9970_2.jpg?gallery"
+              alt=""
+            />
+          </a>
+          <a href="#">척 70</a>
+        </div>
+        <div class="tile cell">
+          <a href="#">
+            <img
+              src="https://image.converse.co.kr/cmsstatic/structured-content/15197/%EC%9B%90%EC%8A%A4%ED%83%802.jpg?gallery"
+              alt=""
+            />
+          </a>
+          <a href="#">윈스타</a>
+        </div>
+        <div class="tile cell">
+          <a href="#">
+            <img
+              src="https://image.converse.co.kr/cmsstatic/structured-content/15198/%EC%9E%AD%ED%8D%BC%EC%85%80.jpg?gallery"
+              alt=""
+            />
+          </a>
+          <a href="#">젝퍼셀</a>
+        </div>
+      </div>
+    </div>
+    <!-- 섹션2 끝 -->
+
+    <!-- 섹션3 시작 -->
+    <div class="section-wrap section03-wrap con row">
+      <div class="section-left cell row">
+        <div class="section-left-50w cell">
+          <div
+            class="img-box"
+            style="
+              background-image: url(https://image.converse.co.kr/cmsstatic/product/571081C_571081C_primary.jpg?browse);
+            "
+          ></div>
+          <div
+            class="img-box hover"
+            style="
+              background-image: url(https://image.converse.co.kr/cmsstatic/product/571081C_571081C_hover.jpg?browse);
+            "
+          ></div>
+
+          <div class="overlay">
+            <div class="product-badges">
+              <span class="badge-text">best seller</span>
+              <span class="badge-text">new arrival</span>
+              <span class="badge-text">online only</span>
+            </div>
+            <div class="product-details">
+              <p class="name">척테일러 올스타 잇츠 오케이 투 원더</p>
+              <p class="price">79,000 원</p>
+            </div>
+          </div>
+        </div>
+        <div class="section-left-50w cell">
+          <div
+            class="img-box"
+            style="
+              background-image: url(https://image.converse.co.kr/cmsstatic/product/28985/571079C_571079C_primary.jpg?browse);
+            "
+          ></div>
+          <div
+            class="img-box hover"
+            style="
+              background-image: url(https://image.converse.co.kr/cmsstatic/product/28985/571079C_571079C_hover.jpg?browse);
+            "
+          ></div>
+
+          <div class="overlay">
+            <div class="product-badges">
+              <span class="badge-text">best seller</span>
+              <span class="badge-text">new arrival</span>
+              <span class="badge-text">online only</span>
+            </div>
+            <div class="product-details">
+              <p class="name">척테일러 올스타 잇츠 오케이 투 원더</p>
+              <p class="price">79,000 원</p>
+            </div>
+          </div>
+        </div>
+        <div class="section-left-50w cell">
+          <div
+            class="img-box"
+            style="
+              background-image: url(https://image.converse.co.kr/cmsstatic/product/171134C_171134C_primary.jpg?browse);
+            "
+          ></div>
+          <div
+            class="img-box hover"
+            style="
+              background-image: url(https://image.converse.co.kr/cmsstatic/product/171134C_171134C_hover.jpg?browse);
+            "
+          ></div>
+
+          <div class="overlay">
+            <div class="product-badges">
+              <span class="badge-text">new arrival</span>
+              <span class="badge-text">online only</span>
+            </div>
+            <div class="product-details">
+              <p class="name">척테일러 올스타 정글 신</p>
+              <p class="price">69,000 원</p>
+            </div>
+          </div>
+        </div>
+        <div class="section-left-50w cell">
+          <div
+            class="img-box"
+            style="
+              background-image: url(https://image.converse.co.kr/cmsstatic/product/171077C_171077C_primary.jpg?browse);
+            "
+          ></div>
+          <div
+            class="img-box hover"
+            style="
+              background-image: url(https://image.converse.co.kr/cmsstatic/product/171077C_171077C_hover.jpg?browse);
+            "
+          ></div>
+
+          <div class="overlay">
+            <div class="product-badges">
+              <span class="badge-text">new arrival</span>
+              <span class="badge-text">online only</span>
+            </div>
+            <div class="product-details">
+              <p class="name">척테일러 올스타 정글 신</p>
+              <p class="price">75,000 원</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-right cell">
+        <div
+          class="img-box"
+          style="
+            background-image: url(https://image.converse.co.kr/cmsstatic/structured-content/18779/01_Home_01_Template_1440x1800.jpg?gallery);
+          "
+        ></div>
+        <div class="overlay">
+          <div class="product-badges">
+            <span class="badge-text-large">online only</span>
+            <span class="badge-text"
+              >오직 온라인 스토어에서만 만나볼 수 있는 <br />다양한 컨버스
+              제품을 소개합니다.</span
+            >
+            <ul class="link">
+              <li>
+                <a href="#">
+                  <div class="svg">
+                    <svg id="icon-arrow" viewBox="0 0 46.7 36">
+                      <path
+                        d="M27.9 0l-3.6 3.5 12.5 12.1H0v4.9h36.8l-12.5 12 3.6 3.5 18.6-18z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <span>더 알아보기</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 섹션3 끝 -->
+
+    <!-- 섹션1 시작 -->
+    <div class="section-wrap section01-wrap con row">
+      <div class="section-left cell">
+        <div
+          class="img-box"
+          style="
+            background-image: url(https://image.converse.co.kr/cmsstatic/structured-content/18389/01_Home_01_Template_1440x1800.jpg?gallery);
+          "
+        ></div>
+      </div>
+
+      <div class="section-right cell row">
+        <div class="section-right-50w cell">
+          <div
+            class="img-box"
+            style="
+              background-image: url(https://image.converse.co.kr/cmsstatic/product/169376C_169376C_primary.jpg?browse);
+            "
+          ></div>
+        </div>
+        <div class="section-right-50w cell">
+          <div
+            class="img-box"
+            style="
+              background-image: url(https://image.converse.co.kr/cmsstatic/product/169374C_169374C_primary.jpg?browse);
+            "
+          ></div>
+        </div>
+        <div class="section-right-100w cell">
+          <div
+            class="img-box"
+            style="
+              background-image: url(https://image.converse.co.kr/cmsstatic/structured-content/18393/01_Home_02_Template_1440x900_Small.jpg?gallery);
+            "
+          ></div>
+        </div>
+      </div>
+    </div>
+    <!-- 섹션1 끝 -->
+  </body>
+</html>

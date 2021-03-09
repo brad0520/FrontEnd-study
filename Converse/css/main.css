@@ -1,0 +1,437 @@
+/* 노멀라이징 */
+* {
+  padding: 0;
+  margin: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+/* 라이브러리 */
+.cell {
+  float: left;
+}
+.cell-r {
+  float: right;
+}
+.con {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.row::after {
+  clear: both;
+  display: block;
+  content: "";
+}
+/* 스타일 */
+
+/* 상단 메뉴 시작 */
+.nav-wrap {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  position: fixed;
+  top: 0;
+  background: white;
+  transition: 0.5s;
+  z-index: 10;
+}
+
+.nav-wrap > .nav-box {
+  height: 100%;
+}
+
+.nav-wrap > .nav-box > .logo-box {
+  width: 140px;
+  height: 60px;
+  position: relative;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.nav-wrap > .nav-box > .logo-box > svg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nav-wrap > .nav-box > .menu-box {
+  height: 60px;
+  line-height: 60px;
+}
+
+.nav-wrap > .nav-box > .menu-box > ul:hover {
+  color: #ddd;
+}
+.nav-wrap > .nav-box > .menu-box > ul > li:hover {
+  color: black;
+}
+.nav-wrap > .nav-box > .menu-box > ul > li > a {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: bold;
+}
+
+.nav-wrap > .nav-box > .icon-box {
+  height: 60px;
+  line-height: 60px;
+}
+.nav-wrap > .nav-box > .icon-box > ul:hover {
+  color: #ddd;
+}
+.nav-wrap > .nav-box > .icon-box > ul > li:hover {
+  color: black;
+}
+.nav-wrap > .nav-box > .icon-box > ul > li > a {
+  font-size: 18px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.nav-wrap > .nav-box > .serch-box {
+  width: 60px;
+  height: 60px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  line-height: 60px;
+}
+/* 상단 메뉴 끝 */
+
+/* 2차 메뉴 시작 */
+.nav-2-depth-wrap {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  margin-top: 60px;
+}
+.nav-2-depth-wrap.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav-2-depth-wrap > .nav-2-depth {
+  height: 100%;
+}
+.nav-2-depth-wrap > .nav-2-depth > .nav-2-depth-left {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+.nav-2-depth-wrap > .nav-2-depth > .nav-2-depth-left::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #fff;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+}
+.nav-2-depth-wrap > .nav-2-depth > .nav-2-depth-right {
+  width: 50%;
+  height: 100%;
+  cursor: pointer;
+}
+.nav-2-depth-wrap > .nav-2-depth > .nav-2-depth-left > .nav-2-content {
+  width: 100%;
+  height: 100%;
+  left: -100%;
+  top: 0;
+  background: #fff;
+  padding-top: 40px;
+  padding-left: 40px;
+  font-size: 28px;
+  font-weight: bold;
+  box-sizing: border-box;
+  position: absolute;
+  transition: 0.5s;
+}
+.nav-2-depth-wrap > .nav-2-depth > .nav-2-depth-left > .nav-2-content.active {
+  left: 0;
+}
+
+.nav-2-depth-wrap
+  > .nav-2-depth
+  > .nav-2-depth-left
+  > .nav-2-content
+  > .list-box {
+  width: 100%;
+  margin-bottom: 80px;
+}
+.nav-2-depth-wrap
+  > .nav-2-depth
+  > .nav-2-depth-left
+  > .nav-2-content
+  > .list-box
+  > ul
+  > li {
+  margin-bottom: 24px;
+}
+
+.nav-2-depth-wrap
+  > .nav-2-depth
+  > .nav-2-depth-left
+  > .nav-2-content
+  > .recom-box {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.nav-2-depth-wrap
+  > .nav-2-depth
+  > .nav-2-depth-left
+  > .nav-2-content
+  > .recom-box
+  > ul {
+  margin-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.nav-2-depth-wrap
+  > .nav-2-depth
+  > .nav-2-depth-left
+  > .nav-2-content
+  > .recom-box
+  > ul
+  > li {
+  width: 25%;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+.nav-2-depth-wrap
+  > .nav-2-depth
+  > .nav-2-depth-left
+  > .nav-2-content
+  > .recom-box
+  > ul
+  > li
+  > img {
+  width: 100%;
+}
+/* 2차 메뉴 끝 */
+
+/* 섹션0 시작 */
+.section00-wrap {
+  margin-top: 60px;
+}
+.section00-wrap > .section00 {
+  width: 100%;
+}
+.section00-wrap > .section00 > .img-box {
+  width: 100%;
+  padding-bottom: 62.5%;
+  background-size: cover;
+}
+/* 섹션0 끝 */
+
+/* 섹션1 시작*/
+.section01-wrap {
+  background-color: #ddd;
+}
+.section-wrap .img-box > img {
+  width: 100%;
+  display: block;
+}
+.section-wrap > .section-left {
+  width: 50%;
+}
+.section-wrap > .section-left > .img-box {
+  width: 100%;
+  padding-bottom: 125%;
+  background-size: cover;
+}
+.section-wrap > .section-right {
+  width: 50%;
+}
+.section-wrap > .section-right > .section-right-50w {
+  width: 50%;
+}
+.section-wrap > .section-right > .section-right-50w > .img-box {
+  width: 100%;
+  padding-bottom: 125%;
+  background-size: cover;
+}
+.section-wrap > .section-right > .section-right-100w {
+  width: 100%;
+}
+.section-wrap > .section-right > .section-right-100w > .img-box {
+  width: 100%;
+  padding-bottom: 62.5%;
+  background-size: cover;
+}
+/* 섹션1 끝 */
+
+/* 섹션2 시작 */
+.section-wrap.section02-wrap {
+  margin: 0 auto;
+  height: 380px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: white;
+  position: relative;
+  text-align: center;
+  box-sizing: border-box;
+}
+.section-wrap.section02-wrap p {
+  font-size: 32px;
+  font-weight: 700;
+}
+.section-wrap.section02-wrap > ul > li {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+.section-wrap.section02-wrap > ul > li .svg {
+  display: inline-block;
+  font-size: 22px;
+  width: 22px;
+  height: 22px;
+  position: relative;
+}
+.section-wrap.section02-wrap > ul > li svg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.section-wrap.section02-wrap > ul > li span {
+  margin-left: 10px;
+}
+.section02-wrap .titles {
+  max-width: 680px;
+  margin: 0 auto;
+  height: 100px;
+  box-sizing: border-box;
+}
+.section02-wrap .titles .tile {
+  width: 25%;
+}
+.section02-wrap .titles a {
+  display: block;
+  font-weight: 600;
+  box-sizing: border-box;
+}
+/* 섹션2 끝 */
+
+/* 섹션3 */
+.section03-wrap {
+  background-color: #ddd;
+}
+.section03-wrap .img-box > img {
+  width: 100%;
+  display: block;
+}
+.section03-wrap > .section-left {
+  width: 50%;
+}
+.section03-wrap > .section-left > .img-box {
+  width: 100%;
+  padding-bottom: 125%;
+  background-size: cover;
+}
+.section03-wrap > .section-left > .section-left-50w {
+  width: 50%;
+  position: relative;
+}
+.section03-wrap > .section-left > .section-left-50w > .img-box {
+  width: 100%;
+  padding-bottom: 125%;
+  background-size: cover;
+}
+.section03-wrap > .section-left > .section-left-50w > .img-box.hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+.section03-wrap > .section-left > .section-left-50w:hover > .img-box.hover {
+  opacity: 1;
+}
+.section03-wrap > .section-left > .section-left-50w > .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  transition: 0.5s;
+}
+/* .section03-wrap > .section-left > .section-left-50w:hover > .overlay {
+  opacity: 1;
+} */
+.section03-wrap .overlay span {
+  display: block;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+}
+.section03-wrap .overlay .product-badges,
+.section03-wrap .overlay .product-details {
+  position: absolute;
+}
+.section03-wrap .overlay .product-badges {
+  top: 5%;
+  right: 5%;
+}
+.section03-wrap .overlay .product-details {
+  bottom: 5%;
+  left: 5%;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.section03-wrap > .section-right {
+  width: 50%;
+  position: relative;
+}
+.section03-wrap > .section-right > .img-box {
+  width: 100%;
+  padding-bottom: 125%;
+  background-size: cover;
+}
+.section03-wrap > .section-right .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transition: 0.5s;
+  color: #eebc3b;
+}
+.section03-wrap .section-right .overlay .product-badges {
+  top: 3%;
+  left: 5%;
+}
+.section03-wrap > .section-right .overlay .badge-text-large {
+  font-size: 48px;
+  font-weight: 700;
+}
+.section03-wrap > .section-right .overlay .badge-text {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.section03-wrap > .section-right .overlay .svg {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+
+.section03-wrap > .section-right .overlay span {
+  font-size: 16px;
+  font-weight: 700;
+}
+/* 섹션3 끝 */

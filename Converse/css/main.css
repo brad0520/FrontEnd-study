@@ -285,17 +285,11 @@ a {
 .section-wrap .arrow {
   margin: 0;
   padding: 0;
+  width: 30px;
+  height: 22px;
   padding-top: 15px;
-  max-width: 160px;
+  max-width: 400px;
   margin: 0 auto;
-  box-sizing: border-box;
-}
-.section-wrap .svg-wrap {
-  width: 100%;
-}
-.section-wrap .arrow {
-  width: 20%;
-  height: 25px;
   box-sizing: border-box;
   position: relative;
 }
@@ -303,6 +297,10 @@ a {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+}
+.section-wrap .svg-wrap {
+  margin-top: 15px;
+  display: inline-block;
 }
 .section-wrap .svg-wrap span {
   padding-left: 14px;
@@ -324,22 +322,6 @@ a {
   width: 100%;
 }
 
-/* .section02-wrap .tiles {
-  max-width: 680px;
-  margin: 0 auto;
-}
-.section02-wrap .tiles .tile {
-  width: 25%;
-  box-sizing: border-box;
-}
-.section02-wrap .tiles a {
-  display: block;
-  font-weight: 600;
-  box-sizing: border-box;
-}
-.section02-wrap .tiles img {
-  width: 100%;
-} */
 /* 섹션2 끝 */
 
 /* 섹션 9 시작*/
@@ -492,6 +474,7 @@ a {
   align-items: center;
   justify-content: center;
   text-align: center;
+  text-transform: uppercase;
   font-size: 1rem;
   transition: 0.5s;
 }
@@ -515,6 +498,11 @@ a {
   margin-top: 15px;
   border: 1px solid black;
 }
+/* 오버레이 WHITE 서식 끝 */
+
+
+
+
 /* 섹션5 끝 */
 
 @media screen and (max-width: 720px) {
